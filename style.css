@@ -6,26 +6,16 @@ body {
 	font-size: 16px;
 }
 
-*, *:before, *:after {
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	box-sizing: border-box;
-}
-
 .container {
-	max-width: 960px;
+	max-width: 960px; /* content width */
 	margin: 0 auto;
 }
 
-#header {
-	height: 0;
-}
-
-#main {
+#showcase {
 	background-color: #eff;
 }
 
-#main .container {
+#showcase .container {
 	font-size: 0; /* remove white space between inline-block */
 }
 
@@ -43,7 +33,6 @@ body {
 
 #panel-4 {
 	background-color: #dff8ff;
-	
 }
 
 #panel-5 {
@@ -58,7 +47,7 @@ body {
 	position: relative; /* for overlay text */
 }
 
-/* for vertical middle */
+/* for vertical middle alignment */
 .panel::before {
 	content: " ";
 	height: 100%;
@@ -84,6 +73,7 @@ body {
 	top: 0;
 	width: 100%;
 	height: 100%;
+	box-sizing: border-box;
 }
 
 .popup:before {
@@ -97,6 +87,7 @@ body {
 	border-left: none;
 	border-right: none;
 	transition: all 0.3s;
+	box-sizing: border-box;
 }
 
 .panel:hover .popup:before {
@@ -115,6 +106,7 @@ body {
 	border-top: none;
 	border-bottom: none;
 	transition: all 0.3s;
+	box-sizing: border-box;
 }
 
 .panel:hover .popup:after {
@@ -123,14 +115,14 @@ body {
 }
 
 .popup p {
+	color: #088;
+	font-size: 18px;
+	line-height: 150%;
 	visibility: hidden; /* visible on hover */
 }
 
 .panel:hover .popup p {
 	visibility: visible;
-	color: #088;
-	font-size: 18px;
-	line-height: 150%;
 }
 
 #footer {
@@ -150,4 +142,31 @@ body {
 	bottom: 5px;
 	color: #666;
 	font-size: 15px;
+}
+
+#header {
+	height: 40px;
+	border-bottom: 1px solid #666;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#header ul {
+	list-style: none;
+	margin: 15px;
+	padding: 0;
+	float: right;
+}
+
+#header li {
+	float: left;
+	margin: 0 5px; 
+}
+
+#main p, #main ul, #main ol {
+	text-align: left;
 }
