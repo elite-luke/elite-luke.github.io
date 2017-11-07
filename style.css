@@ -115,7 +115,7 @@ body {
 }
 
 .popup p {
-	color: #088;
+	color: darkblue;
 	font-size: 18px;
 	line-height: 150%;
 	visibility: hidden; /* visible on hover */
