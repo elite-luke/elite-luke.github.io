@@ -106,6 +106,10 @@ body {
 	visibility: visible;
 }
 
+.panel a, .panel a:hover, .panel a:active, .panel a:visited {
+	color: #9fd8ff;
+}
+
 #footer {
 	height: 20px;
 }
