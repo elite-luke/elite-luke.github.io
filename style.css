@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: #fff;
+	background: #eff;
 	text-align: center; /* Necessary for IE 6,7,8 */
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 16px;
@@ -20,19 +20,19 @@ body {
 }
 
 #panel-1, #panel-6 {
-	background-color: #eff;
+	background-color: #dff2ff;
 }
 
 #panel-2 {
-	background-color: #c4ffff;
+	background-color: #dff2ff;
 }
 
 #panel-3 {
-	background-color: #d7ffff;
+	background-color: #dff2ff;
 }
 
 #panel-4 {
-	background-color: #dff8ff;
+	background-color: #dff2ff;
 }
 
 #panel-5 {
@@ -41,10 +41,12 @@ body {
 
 .panel {
 	width: 320px;
-	height: 240px;
+	height: 260px;
 	display: inline-block;	/* floating */
 	vertical-align: middle; /* in a line */
 	position: relative; /* for overlay text */
+	border: 1px solid #bfe5ff;
+	box-sizing: border-box;
 }
 
 /* for vertical middle alignment */
@@ -64,7 +66,9 @@ body {
 }
 
 .panel:hover img {
-	filter: blur(4px); /* blur image on hover */
+	/*filter: blur(4px); /* blur image on hover */
+	max-height: 75%;
+	vertical-align: bottom;
 }
 
 .popup {
@@ -83,7 +87,7 @@ body {
 	top: 0;
 	width: 0;
 	height: 100%;
-	border: 1px solid #088;
+	border: 2px solid #9fd8ff;
 	border-left: none;
 	border-right: none;
 	transition: all 0.3s;
@@ -102,7 +106,7 @@ body {
 	top: 50%;
 	width: 100%;
 	height: 0;
-	border: 1px solid #088;
+	border: 2px solid #9fd8ff;
 	border-top: none;
 	border-bottom: none;
 	transition: all 0.3s;
@@ -115,9 +119,8 @@ body {
 }
 
 .popup p {
-	color: darkblue;
-	font-size: 18px;
-	line-height: 150%;
+	color: #005f9f;
+	font-size: 16px;
 	visibility: hidden; /* visible on hover */
 }
 
