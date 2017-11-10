@@ -1,0 +1,15 @@
+
+#main {
+	padding: 40px 0;
+	line-height: 150%;
+
+	height: 300px;
+}
+
+#main p, #main ol, #main ul {
+	text-align: left;
+}
+
+#main img {
+	margin: 20px 0;
+}
