@@ -126,7 +126,7 @@ body {
 #header .container {
 	height: 90px;
 	position: relative;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #666;
 }
 
 #header #logo {
@@ -154,16 +154,13 @@ body {
 
 #about-menu div p {
 	margin: 0;
-	font-size: 13px;	
+	font-size: 13px;
+	color: #003f9f;	
 	border-bottom: 4px solid #ccc;
 }
 
 #about-menu div:hover p {
 	border-bottom: 4px solid #666;
-}
-
-#about-menu a, #about-menu a:hover, #about-menu a:active, #about-menu a:visited {
-	color: #00a;
 }
 
 #main {
@@ -207,52 +204,57 @@ body {
 }
 
 #navi li {
-	float: left;
+	display: inline-block;
+	vertical-align: middle;
 	margin-left: 15px;
 	font-size: 12px;
-}
-
-#navi a, #navi a:active, #navi a:visited {
 	color: #666;
-	text-decoration: none;
 }
 
-#navi a:hover {
+#navi li:hover {
 	color: #003f9f;
-	text-decoration: underline;
+	border-bottom: 1px solid #003f9f;
 }
 
 #title {
 	position: absolute;
 	left: 200px;
-	bottom: 2px;
+	bottom: 0px;
 	margin: 0;
 	font-size: 18px;
+	color: #003f9f;
+	border-bottom: 4px solid #eff;
+}
+
+#title.current {
+	border-bottom: 4px solid #666;
+}
+
+#title:hover {
+	border-bottom: 4px solid #666;
 }
 
 #menu {
 	list-style: none;
 	position: absolute;
 	right: 0;
-	bottom: 2px;
+	bottom: 0px;
 	margin: 0;
 }
 
 #menu li {
-	float: left;
+	display: inline-block;
+	vertical-align: middle;
 	margin-left: 15px;
 	font-size: 16px;
-}
-
-#title a, #title a:active, #title a:visited, 
-#menu a, #menu a:active, #menu a:visited  {
 	color: #003f9f;
-	text-decoration: none;
 	border-bottom: 4px solid #eff;
 }
 
-#title a:hover, #menu a:hover  {
-	color: #003f9f;
-	text-decoration: none;
+#menu li.current {
+	border-bottom: 4px solid #666;
+}
+
+#menu li:hover {
 	border-bottom: 4px solid #666;
 }
