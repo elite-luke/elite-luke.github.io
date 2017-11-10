@@ -1,0 +1,18 @@
+
+#main {
+	padding: 40px 0;
+	line-height: 150%;
+}
+
+#main p {
+	text-align: left;
+}
+
+#main img.logo {
+	margin: 40px 0;
+}
+
+#main img.map {
+	float: left;
+	margin: 40px 40px 40px 0;
+}

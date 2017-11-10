@@ -163,38 +163,6 @@ body {
 	border-bottom: 4px solid #666;
 }
 
-#main {
-	padding-top: 30px;
-	text-align: left; 
-}
-
-#main .container {
-	overflow: hidden;
-}
-
-#main h2 {
-	font-weight:lighter;
-	font-size:160%;
-}
-
-#main p {
-	line-height: 150%;
-}
-
-#about {
-	float: left;
-	width: 65%;
-}
-
-#contact {
-	float:right;
-	width:25%;
-}
-
-#contact .sub {
-	color:#999;
-}
-
 #navi {
 	list-style: none;
 	position: absolute;
